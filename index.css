@@ -202,13 +202,14 @@ body {
     }
 
     .nme input{
-        font-size: larger;
+        font-size:large;
         font-weight: 500;
     }
     
     #reposPerPage{
         font-size: larger;
         font-weight: bold;
+        color: white;
     }
 
     .details,
