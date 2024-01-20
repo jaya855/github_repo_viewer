@@ -56,6 +56,8 @@ body {
     flex-direction: column;
 }
 
+
+
 .repo-card {
     border: 1px solid #ccc;
     padding: 10px;
@@ -193,6 +195,20 @@ body {
 @media screen and (max-width: 768px) {
     .outest {
         width: 100vw;
+    }
+
+    .nme{
+        flex-direction: column;
+    }
+
+    .nme input{
+        font-size: larger;
+        font-weight: 500;
+    }
+    
+    #reposPerPage{
+        font-size: larger;
+        font-weight: bold;
     }
 
     .details,
