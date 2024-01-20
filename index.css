@@ -90,7 +90,8 @@ body {
     height: 40%;
     width: 40%;
     text-align: center;
-    font-weight: bold;
+    font-weight: 500;
+    font-size: large;
     border-radius: 0.5rem;
     border:5px solid rgb(14, 2, 87)
    
