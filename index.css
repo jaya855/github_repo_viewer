@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#repoDiv {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+   
+    height: 60%;
+   
+    overflow-y: auto;
+}
+.details{
+   
+  width: 50%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+    align-items: center;
+}
+.filtering{
+   
+    width: 50%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.part1 {
+    height: 30%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100wh;
+    
+}
+
+.outest {
+    height: 95vh;
+    width: 90vw;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.repo-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content:center;
+    background-color: rgb(38, 12, 12);
+   
+}
+
+.top{
+    font-weight: bolder;
+    font-size:medium;
+}
+
+.nme{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 45%;
+    width: 70%;
+    gap:5px;
+    
+}
+.nme input{
+    height: 40%;
+    width: 40%;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border:5px solid rgb(14, 2, 87)
+   
+}
+.nme button{
+    border-radius: 0.5rem;
+    border:5px solid rgb(14, 2, 87);
+    height: 40%;
+    width: 30%;
+    background-color:#dfebf7;
+    font-size: larger;
+    font-weight: bold;
+}
+.num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 80%;
+   
+}
+.pagination {
+    align-items: center;
+    display: flex;
+    height: 10%;
+    justify-content: center;
+    
+}
+
+.page-link {
+    height: 50%;
+    width: 30px;
+    cursor: pointer;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+.page-link i {
+    font-size: 22px; 
+}
+
+.page-link.active {
+    background-color:#55a3f0; 
+    color: #fff;
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid hsl(204, 70%, 53%);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.innerDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.txt{
+    font-size: small;
+}
+.picDiv{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    width: 40%;
+    height: 50%;
+    gap:0.8rem;
+
+}
+
+.dataDiv{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-direction: column;
+    width: 60%;
+    height: 50%;
+    gap: 0.1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .outest {
+        width: 100vw;
+    }
+
+    .details,
+    .filtering {
+        width: 100%;
+    }
+
+    .innerDetails {
+        flex-direction: column;
+    }
+
+    .picDiv,
+    .dataDiv {
+        width: 100%;
+    }
+
+    .nme input,
+    .nme button,
+    .num,
+    .pagination {
+        width: 100%;
+    }
+}
+
+body{
+    background-color: #002244;
+    color: white;
+    
+}
+body a{
+    text-decoration: none;
+    color: white;
+}
+
+.two {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  font-size: small;  
+
+}
+.three{
+    
+    font-size: small;  
+
+}
+
+
+
